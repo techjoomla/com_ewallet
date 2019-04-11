@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_EWALLET_FORM_LBL_TRANSACTION_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+    <field name="user_id" type="user"
+                
+            label="COM_EWALLET_FORM_LBL_TRANSACTION_USER_ID"
+            description="COM_EWALLET_FORM_DESC_TRANSACTION_USER_ID" 
+                
+                
+                 required="true" 
+            filter="raw" /> 
+  <field name="amount" type="text" size="40" class="inputbox"
+         required="true" 
+            label="COM_EWALLET_FORM_LBL_TRANSACTION_AMOUNT"
+            description="COM_EWALLET_FORM_DESC_TRANSACTION_AMOUNT" 
+       /> 
+         <field
+        name="type"
+        type="list"
+        label="COM_EWALLET_FORM_LBL_TRANSACTION_TYPE"
+        description="COM_EWALLET_FORM_DESC_TRANSACTION_TYPE"
+        class="inputbox"
+        size="1"
+        default="C"
+         required="true" >
+        <option value="C">CREDIT</option>
+        <option value="D">DEBIT</option>
+        
+    </field> 
+      <field name="comment" type="textarea"
+        
+            label="COM_EWALLET_FORM_LBL_TRANSACTION_COMMENT"
+            description="COM_EWALLET_FORM_DESC_TRANSACTION_COMMENT" 
+        
+         required="true" 
+        
+        filter="safehtml" /> 
+     
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

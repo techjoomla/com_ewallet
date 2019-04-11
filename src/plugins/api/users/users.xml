@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="api" method="upgrade">
+    <name>Api - users</name>
+    <version>1.0</version>
+    <creationDate>April 2014</creationDate>
+    <author>Tekdi</author>
+    <authorEmail>support@tekdi.com</authorEmail>
+    <authorUrl>http://www.tekdi.com</authorUrl>
+    <copyright>2014 users</copyright>
+    <license>GNU General Public License v2</license>
+    <description>This plugin exposes users to the Joomla! API</description>
+
+    <files>
+        <filename plugin="users">users.php</filename>
+        <filename >users/create_user.php</filename>
+        <filename >users/login.php</filename>
+        <folder>users</folder>
+    </files>
+</extension>

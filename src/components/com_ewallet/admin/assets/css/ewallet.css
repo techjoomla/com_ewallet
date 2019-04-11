@@ -1,0 +1,10 @@
+.icon-48-icon-48-ewallet {
+background-image:url(../images/icon-48-ewallet.png)!important;
+}
+
+
+.setting-td input, .setting-td label {
+    display: inline;
+    float: none;
+}
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<!-- ######################### J2.5 params ######################### -->
+	<fieldset name="basic" label="COM_EWALLET_BASIC_SETTINGS" description="" addfieldpath="/administrator/components/com_ewallet/elements" >
+		<field name="wallet_currency_nam" type="text" default="Coins" label="COM_EWALLET_CURRENCY_NAME" description="COM_EWALLET_CURRENCY_NAME_DESC" />
+		<field name="wallet_currency_code" type="text" default="EC" label="COM_EWALLET_CURRENCY_CODE" description="COM_EWALLET_CURRENCY_CODE_DESC" />
+		<field name="wallet_currency_sym" type="text" default="#" label="COM_EWALLET_CURRENCY_SYM" description="COM_EWALLET_CURRENCY_SYM_DESC" />
+		<field name="wallet_currency_icon" type="text" default="default_currency.png" label="COM_EWALLET_CURRENCY_ICON" description="COM_EWALLET_CURRENCY_ICON_DESC" />
+		<field name="wallet_exchange" type="text" default="10" label="COM_EWALLET_CURRENCY_EXCHANGE" description="COM_EWALLET_CURRENCY_EXCHANGE_DESC" />
+       </fieldset>
+	
+	<!-- PRODUCT OPTIONS -->
+	<fieldset name="general" label="COM_EWALLET_GENERAL_SETTINGS" description="" addfieldpath="/administrator/components/com_ewallet/elements" >
+		<field name="loadBootstrap" class="btn-group" type="radio"  default="0" description="COM_EWALLET_BOOTSTRAP_LOAD_DESC" label="COM_EWALLET_BOOTSTRAP_LOAD">
+			<option value="1">COM_EWALLET_YES</option>
+			<option value="0">COM_EWALLET_NO</option>
+		</field>		
+	</fieldset>
+	
+	<!--payment_settings options -->
+	<fieldset name="payment" label="COM_EWALLET_PAYMENT_SETTINGS" description="" addfieldpath="/administrator/components/com_ewallet/elements" >
+		<field name="sale_mail" type="text" default="" label="COM_EWALLET_SALES_EMAIL" description="COM_EWALLET_SALES_EMAIL_DESC" />
+		<field name="addcurrency" type="text" default="USD" label="COM_EWALLET_ADDCURRENCY" description="COM_EWALLET_ADDCURRENCY_DESC" />
+		<field name="addcurrency_sym" type="text" default="$" label="COM_EWALLET_ADDCURRENCY_SYM" description="COM_EWALLET_ADDCURRENCY_SYM_DESC" />
+        	<field name="currency_display_format" type="text" default="{SYMBOL}{AMOUNT}" label="COM_EWALLET_CURRENCY_DISPLAY_FORMAT" description="COM_EWALLET_CURRENCY_DISPLAY_FORMAT_DESC" />
+        <field name="gateways" type="gatewayplg" default="bycheck" multiple="multiple" label="COM_EWALLET_SELECT_GATEWAY" description="COM_EWALLET_SELECT_GATEWAY_DES" />
+	 <field name="wallet_surcharge_flat" type="text" default="10" label="COM_EWALLET_SURCHARGE_FLAT" description="COM_EWALLET_SURCHARGE_FLAT_DESC" />
+        <field name="wallet_surcharge_percentage" type="text" default="10" label="COM_EWALLET_SURCHARGE_PERCENTAGE" description="COM_EWALLET_SURCHARGE_PERCENTAGE_DESC" />
+	
+	</fieldset>
+
+	<fieldset name="order" label="COM_EWALLET_ORDER_SETTINGS" description="" addfieldpath="/administrator/components/com_ewallet/elements" >
+		<field name="order_prefix" type="text" default="OID" maxlength="5" label="COM_EWALLET_ORDER_PREFIX" description="COM_EWALLET_ORDER_PREFIX_DESC" />
+		<field name="separator" type="text" default="-" maxlength="1" label="COM_EWALLET_SEPARATOR" description="COM_EWALLET_SEPARATOR_DESC" />
+		<field name="random_orderid" class="btn-group" type="radio" default="0" label="COM_EWALLET_RANDOM_OREDRID" description="COM_EWALLET_RANDOM_OREDRID_DESC" >
+			<option value="1">COM_EWALLET_YES</option>
+			<option value="0">COM_EWALLET_NO</option>
+		</field>
+		<field name="padding_count" type="text" default="3" class="validate-numeric" label="COM_EWALLET_PADDING_COUNT" description="COM_EWALLET_PADDING_COUNT_DESC" />
+	</fieldset>
+</config>

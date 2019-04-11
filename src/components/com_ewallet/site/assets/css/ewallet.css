@@ -1,0 +1,34 @@
+
+.techjoomla-bootstrap tr, .techjoomla-bootstrap td {
+border: medium none !important;
+}
+
+.techjoomla-bootstrap .table{
+width:100%;
+}
+
+.techjoomla-bootstrap table.adminlist td, table.adminlist th{
+padding: 4px;
+}
+
+.techjoomla-bootstrap .adminlist{
+width:100%;
+
+}
+
+.techjoomla-bootstrap .fieldset_block{
+border: 1px solid #CCCCCC;
+margin:5px;
+padding: 5px;
+}
+
+.techjoomla-bootstrap .table-tool{ padding:5px 10px; font-weight: bold;}
+
+.techjoomla-bootstrap .com_wallet_currency {
+height: 50px;
+width: 50px;
+}
+
+.techjoomla-bootstrap .com_ewallet_ajax_loading {
+    text-align: center;
+}

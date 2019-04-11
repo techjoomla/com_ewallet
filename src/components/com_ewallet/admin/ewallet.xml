@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<extension type="component" version="3.0" method="upgrade">
+	<name>eWallet</name>
+	<creationDate>Dec 2013</creationDate>
+	<author>TechJoomla</author>
+	<authorEmail>TechJoomla</authorEmail>
+	<authorUrl>contact@techjoomla.com</authorUrl>
+	<version>0.1Beta1</version>
+	<description>eWallet</description>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+
+	<scriptfile>script.ewallet.php</scriptfile>
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>assets</folder>
+		<filename>helper.php</filename>
+		<filename>ewallet.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_ewallet.ini</language>
+	</languages>
+	
+	<administration>
+		<menu link="option=com_ewallet" img="components/com_ewallet/assets/images/ewallet16x16.png">COM_EWALLET</menu>
+		<submenu>
+			<menu link="option=com_ewallet&amp;view=dashboard" img="components/com_ewallet/assets/images/dashboard_16.png">COM_DASH</menu>
+			<menu link="option=com_ewallet&amp;view=orders" img="components/com_ewallet/assets/images/order_16.png">COM_ORDERS</menu>
+            	<menu link="option=com_ewallet&amp;view=billing" img="components/com_ewallet/assets/images/order_16.png">COM_TRANSACTION</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+			<folder>sql</folder>
+			<folder>elements</folder>
+            <folder>helpers</folder>
+            <folder>tables</folder>
+			<filename>config.xml</filename>
+			<filename>ewallet.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_ewallet.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_ewallet.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_ewallet.menu.ini</language>
+		</languages>
+	</administration>
+</extension>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Orders" >
+		<message><![CDATA[Orders view]]></message>	
+		<options var="task">
+ 			<default name="Orders" msg="Orders view" />
+		</options>
+	</view>	
+	<state>
+		<name>Orders</name>
+		<description>Orders view</description>	 
+	</state>
+</metadata>
+

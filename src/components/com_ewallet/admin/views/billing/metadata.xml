@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: metadata.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+
+<metadata>
+	<view title="billing" >
+		<message><![CDATA[Bill details]]></message>	
+		 <options var="task">
+ 			<default name="Wallet Transactions" msg="Shows Transactions to the user's Wallet." />
+		  </options>
+	</view>	
+	<state>
+	<name>Wallet Transactions</name>
+	<description>Shows Transactions to the user's Wallet.</description>
+	</state>
+</metadata>
+

@@ -1,0 +1,141 @@
+.techjoomla-bootstrap .radio_label input,.techjoomla-bootstrap .radio_label label {
+    float: none;
+}
+
+span.qtc_itemcount {
+float: left;
+margin: 0 0 0 3px;
+width:16px/* added by kk*/
+}
+span.qtc_itemcount input{ 
+width:15px!important; 
+height:15px; 
+padding:2px 4px; 
+border:0px; 
+background:none;}/* add by kk*/
+
+.qtc_count, .qtc_itemcount, .qtc_buy modal{
+float: left;
+}
+
+.curr_margin{  margin: 0 5px 5px 0 !important; }
+.btn_margin{margin:2px 1px 2px 0px   !important; }
+.techjoomla-bootstrap .qtc_right_margin{margin-right: 5px !important; }
+.techjoomla-bootstrap .qtc_left_margin{margin-left:5px !important; }
+.techjoomla-bootstrap .qtc_left_top {	margin-top:5px !important; }
+.qtc_addInvalidate_border .invalid {border-color: #e9322d !important; }
+/*************************************start hack in bootstrap********************************/
+.techjoomla-bootstrap .modal {
+    background-clip: padding-box;
+    background-color: inherit;
+    border: medium none !important;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: none !important;
+    left: 50%;
+    margin-left: auto !important;
+    outline: 0 none;
+    position: inherit !important;
+    top: 10% ;
+    width: auto !important;
+    z-index: 1050;
+}
+.techjoomla-bootstrap .form-horizontal .control-label {
+margin-top: 0 !important;
+}
+.techjoomla-bootstrap .table-bordered th,.techjoomla-bootstrap .table-bordered td {
+    border-left: medium none !important;
+}
+
+.techjoomla-bootstrap .nav-tabs{
+list-style-type: none !important;
+}
+.techjoomla-bootstrap .nav-tabs > li {
+    margin-bottom: -1px !important;
+}
+
+.techjoomla-bootstrap h3 {
+    font-size: 18px !important;
+    line-height: 27px;
+}
+
+.techjoomla-bootstrap h1,.techjoomla-bootstrap  h2,.techjoomla-bootstrap  h3,.techjoomla-bootstrap  h4,.techjoomla-bootstrap  h5,.techjoomla-bootstrap  h6 {
+    color: inherit !important;
+    font-family: inherit;
+    font-weight: bold !important;
+    text-rendering: optimizelegibility;
+}
+
+.techjoomla-bootstrap .btn-primary,.techjoomla-bootstrap  .btn-primary:hover,.techjoomla-bootstrap  .btn-warning,.techjoomla-bootstrap  .btn-warning:hover,.techjoomla-bootstrap  .btn-danger,.techjoomla-bootstrap  .btn-danger:hover,.techjoomla-bootstrap  .btn-success,.techjoomla-bootstrap  .btn-success:hover,.techjoomla-bootstrap  .btn-info,.techjoomla-bootstrap  .btn-info:hover,.techjoomla-bootstrap  .btn-inverse,.techjoomla-bootstrap  .btn-inverse:hover {
+    color: #FFFFFF !important;
+}
+.techjoomla-bootstrap select {
+    width: auto !important;
+}
+.techjoomla-bootstrap .form-horizontal #qtc_mainwrapper .control-label {
+    width: 105px;
+}
+.techjoomla-bootstrap .form-horizontal #qtc_mainwrapper .controls {
+    margin-left: 120px;
+}
+.techjoomla-bootstrap #qtc_mainwrapper .qtc_select {
+    width: 161px !important;
+}
+.techjoomla-bootstrap .btn-mini { margin:2px 3px;}
+
+/* added by kk for registration view */
+
+.q2c-registration .form-horizontal .control-label{ text-align:left!important; width:140px!important;}
+.q2c-registration .form-horizontal .controls{  margin-left: 151px!important;}
+.q2c-registration-btn{ text-align:right;}
+
+/* added by VBmundhe product page changes */
+.techjoomla-bootstrap  .qtc_prod_blog_page .form-horizontal .control-label { width: 75px !important;}
+.techjoomla-bootstrap .qtc_prod_blog_page .form-horizontal .controls {margin-left: 90px; !important;}
+/*.techjoomla-bootstrap .qtc_prod_blog_page .form-horizontal .control-group {margin-bottom: 2px;!important;}*/  /*added & removed by vbmundhe*/
+
+
+/* filter search css added by kk */
+.filter-search #search_list{ margin-bottom:0px!important;}
+
+.techjoomla-bootstrap .qtc_currencey_textbox input[type="text"]{padding: 4px 6px!important; height:20px!important}
+
+.techjoomla-bootstrap .form-horizontal .qtc_controls_text {padding-top:5px;}
+
+.techjoomla-bootstrap  .qtc_modal .icon-edit:before { content: none !important; }
+
+.techjoomla-bootstrap #qtc_center_margin { text-align: center;}
+.qtc_removeBottomMargin {margin-bottom: 0px !important;}
+.techjoomla-bootstrap .span1{ min-width:50px !important ;}
+.techjoomla-bootstrap .icon-plus:before { content: none !important; }
+.techjoomla-bootstrap .icon-minus:before { content: none !important; }
+.techjoomla-bootstrap .qtc_dashboard_hr{margin:5px  !important; }
+
+/* added by vidyasagar for toolbar and thumbnail in J2.5 qtc_ForLiStyle */
+.techjoomla-bootstrap .qtc_productblog ul li {
+    list-style: none outside none !important;
+    background: none repeat scroll 0 0 transparent !important; /* FOR JA template li styling applied */
+}
+.techjoomla-bootstrap .qtc_toolbar .nav {
+    list-style: none outside none !important;
+    margin-bottom: 18px;
+    margin-left: 0;
+}
+.techjoomla-bootstrap .qtc_toolbar .navbar-inner{
+height: 40px; /* FOR JA template toolbar ht */
+}
+.techjoomla-bootstrap .qtc_toolbar ul li {
+    list-style: none outside none !important;
+    background: none repeat scroll 0 0 transparent !important; /* FOR JA template li styling applied */
+    overflow: visible !important; /* FOR JA template toolbar popup is not working */
+    padding-left: 5px !important;/* FOR JA template toolbar */
+}
+
+.techjoomla-bootstrap .qtc_ForLiStyle li {
+    list-style: none outside none !important;
+    background: none repeat scroll 0 0 transparent !important; /* FOR JA template li styling applied */
+}
+	/* FOR Beex_3 template toolbar popup is not working */
+.techjoomla-bootstrap .qtc_toolbar .collapse {
+overflow: visible; }
+
+/*end hack in bootstrap*/
